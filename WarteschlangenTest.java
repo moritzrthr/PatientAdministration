@@ -1,7 +1,7 @@
 
 
 public class WarteschlangenTest {
-    final int N = 9;
+    final int N = 3;
     
     public void testeAnmelden(){
         PatientenWarteschlange wartezimmer = new PatientenWarteschlange(N);

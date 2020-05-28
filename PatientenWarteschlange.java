@@ -3,6 +3,7 @@
 public class PatientenWarteschlange {
     private final int N;
     private int n;
+    int i = 0;
     private Patient[] patienten;
     
     public PatientenWarteschlange(int N){
@@ -20,14 +21,18 @@ public class PatientenWarteschlange {
     }
     
     public void anmelden(Patient patient){
+        this.patienten[n] = patient;
+        
     }
    
-    public Patient aufrufen(){
-        return null;
+    public void aufrufen(){
+       for(i = 0; i < N; i++) {
+        System.out.println(patienten[i]);
     }
+    } 
     
     @Override
     public String toString(){
-        return "nicht implementiert";
+    return "test";    
     }
 }
